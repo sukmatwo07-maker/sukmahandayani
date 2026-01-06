@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contact - konsultasi psikologi</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #fef5e7;
+        }
+
+        .header {
+            background-color: #8e44ad;
+            padding: 15px 0;
+        }
+
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo h1 {
+            color: white;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            background-color: #9b59b6;
+            border-radius: 5px;
+        }
+
+        .nav a:hover {
+            background-color: #71368a;
+        }
+
+        .isi {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .isi h2 {
+            color: #8e44ad;
+            border-bottom: 2px solid #8e44ad;
+            padding-bottom: 10px;
+        }
+
+        .isi h3 {
+            color: #8e44ad;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .isi p {
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        form input,
+        form textarea,
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+        }
+
+        form button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #8e44ad;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #71368a;
+        }
+
+        .footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>konseling psikologi</h1>
+            </div>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">about</a>
+                <a href="contact.html">contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="isi">
+        <h2>ayo konseling</h2>
+        
+        <p>Mau booking sesi konseling atau tanya-tanya dulu? Hubungi kami lewat kontak dibawah.</p>
+    
+        
+        <h3>Form Booking Konseling</h3>
+        <p>Isi form dibawah ini buat booking sesi konseling.</p>
+        
+        <form id="formBooking">
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama" required placeholder="Nama lengkap kamu">
+            
+            <label>No. HP / WhatsApp:</label>
+            <input type="text" name="telepon" required placeholder="08xx-xxxx-xxxx">
+            
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Email (opsional)">
+            
+            <label>Jenis Layanan:</label>
+            <select name="layanan" required>
+                <option value="">-- Pilih Layanan --</option>
+                <option value="Konseling Individu">Konseling Individu</option>
+                <option value="Konseling Pasangan">Konseling Pasangan</option>
+                <option value="Konseling Keluarga">Konseling Keluarga</option>
+                <option value="Tes Psikologi">Tes Psikologi</option>
+            </select>
+            
+            <label>Tanggal yang Diinginkan:</label>
+            <input type="date" name="tanggal" required>
+
+            <label>Metode Konseling:</label>
+            <select name="metode" required>
+                <option value="Tatap Muka">Tatap Muka (di klinik)</option>
+                <option value="Online">Online (video call)</option>
+            </select>
+            
+            <label>Keluhan / Masalah yang Ingin Dibahas:</label>
+            <textarea name="keluhan" rows="4" placeholder="Ceritain sedikit tentang masalah anda"></textarea>
+            
+            <button type="submit">Kirim Booking</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © Sukma Handayani - 251011700785 - 01SIFP015</p>
+    </div>
+</body>
+</html>
